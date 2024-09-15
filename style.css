@@ -49,16 +49,13 @@ body {
 
 .preparation__list h3,
 .instruction__list h3 {
-    color: hsl(332, 51%, 32%);
-}
-
-.preparation__list h3,
-.instruction__list h3 {
+    color: hsl(24, 5%, 34%);
     display: inline;
 }
 
 li {
     margin-bottom: 0.5rem;
+    padding-left: 1rem;
 }
 
 .about__paragraph,
@@ -101,14 +98,17 @@ li {
 
 .preparation__h3 {
     font-size: 1rem;
-}
-
-.preparation__list {
-    font-size: 0.75rem;
+    color: hsl(332, 51%, 32%);
 }
 
 .preparation__aside {
     margin: 0.5rem 2rem;
+}
+
+/* instruction */
+.instruction__list li::marker {
+    font-weight: 900;
+    color: hsl(24, 5%, 34%);
 }
 
 /* nutrition */
