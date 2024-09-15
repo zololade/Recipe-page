@@ -147,7 +147,7 @@ td:nth-child(even) {
     .container {
         background-color: white;
         padding: 2rem;
-        max-width: calc(375px + (100vw/4));
+        max-width: calc(24rem + (100vw/4));
         border-radius: 1rem;
     }
 
