@@ -1,0 +1,158 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/*font styles and colors*/
+
+body {
+    font-family: "outfit", sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: hsl(30, 10%, 34%);
+}
+
+/* shared styles */
+
+.section__h2,
+.section__h1 {
+    font-family: "young serif", serif;
+}
+
+.instruction,
+.nutrition {
+    border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+.section__h1 {
+    margin-top: 2rem;
+    line-height: 1;
+    color: hsl(24, 5%, 18%);
+}
+
+.section__h2,
+.nutrition__table tr td:last-child {
+    color: hsl(14, 45%, 36%);
+}
+
+.preparation__list h3,
+.instruction__list h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation__list h3,
+.instruction__list h3 {
+    display: inline;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.about__paragraph,
+.ingredient__list,
+.instruction__list,
+.nutrition__para,
+.nutrition__table {
+    margin-bottom: 1rem;
+}
+
+.ingredient__h2,
+.instruction__h2,
+.nutrition__h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* main */
+.main {
+    padding: 0 2rem;
+}
+
+/* figure */
+.figure__image {
+    width: 100%;
+    height: auto;
+}
+
+/* about */
+.about__header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about__preparation {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: hsl(330, 100%, 98%);
+}
+
+.preparation__h3 {
+    font-size: 1rem;
+}
+
+.preparation__list {
+    font-size: 0.75rem;
+}
+
+.preparation__aside {
+    margin: 0.5rem 2rem;
+}
+
+/* nutrition */
+.nutrition__table {
+    width: 100%;
+}
+
+.nutrition__table,
+tr,
+td {
+    border: 0px solid white;
+    border-collapse: collapse;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+
+td {
+    padding: 0.5rem;
+}
+
+td:nth-child(even) {
+    font-weight: 500;
+}
+
+/* media */
+
+@media (min-width: 768px) {
+    body {
+        background-color: hsl(30, 18%, 87%);
+        display: grid;
+        place-content: center;
+        padding: 2rem 0;
+    }
+
+    .container {
+        background-color: white;
+        padding: 2rem;
+        max-width: calc(375px + (100vw/5));
+        border-radius: 1rem;
+    }
+
+    .figure__image {
+        border-radius: 0.5rem;
+    }
+}
