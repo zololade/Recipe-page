@@ -27,19 +27,13 @@ body {
 /* shared styles */
 
 .section__h2,
-.section__h1 {
+.page__header {
     font-family: "young serif", serif;
 }
 
 .instruction,
 .nutrition {
     border-top: 1px solid hsl(30, 18%, 87%);
-}
-
-.section__h1 {
-    margin-top: 2rem;
-    line-height: 1;
-    color: hsl(24, 5%, 18%);
 }
 
 .section__h2,
@@ -74,8 +68,17 @@ li {
 }
 
 /* main */
-.main {
+.main,
+.page__header {
     padding: 0 2rem;
+}
+
+.page__header {
+    margin: 2rem 0;
+    line-height: 1;
+    color: hsl(24, 5%, 18%);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* figure */
@@ -85,10 +88,6 @@ li {
 }
 
 /* about */
-.about__header {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
 
 .about__preparation {
     border-radius: 0.5rem;
